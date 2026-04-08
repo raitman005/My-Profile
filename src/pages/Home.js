@@ -79,7 +79,7 @@ function Home() {
         </div>
         <div className="hero-image">
           <div className="image-frame">
-            <img src="/images/me.jpg" alt="Marc Justin Rait" />
+            <img src={process.env.PUBLIC_URL + "/images/me.jpg"} alt="Marc Justin Rait" />
             <div className="image-border"></div>
           </div>
         </div>

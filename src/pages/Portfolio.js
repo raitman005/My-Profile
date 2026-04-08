@@ -8,7 +8,7 @@ const projects = [
     category: 'Shopify',
     tags: ['Shopify', 'Liquid', 'Ecommerce'],
     url: 'https://lipslikehome.com',
-    image: '/images/lipslikehome.png',
+    image: process.env.PUBLIC_URL +'/images/lipslikehome.png',
     /* Image keyword: "luxury lip serum skincare ecommerce website screenshot" */
     desc: 'Swiss-made luxury lip care brand. Customized Shopify Liquid theme, tailored product pages, and ensured a seamless multi-currency shopping experience.',
   },
@@ -18,7 +18,7 @@ const projects = [
     category: 'Shopify',
     tags: ['Shopify', 'Liquid', 'Skincare'],
     url: 'https://cleanspiracy-beauty.com',
-    image: '/images/cleanspiracy.png',
+    image: process.env.PUBLIC_URL +'/images/cleanspiracy.png',
     /* Image keyword: "acne treatment skincare ecommerce website screenshot" */
     desc: 'Swiss acne treatment brand. Built and customized Shopify store with before/after sections, clinical study pages, and conversion-focused product layout.',
   },
@@ -28,7 +28,7 @@ const projects = [
     category: 'WordPress',
     tags: ['WordPress', 'PHP', 'Plugin'],
     url: '#',
-    image: '/images/wordpress-plugin.png',
+    image: process.env.PUBLIC_URL +'/images/wordpress-plugin.png',
     /* Image keyword: "wordpress dashboard custom plugin development code" */
     desc: 'Developed a custom WordPress plugin from scratch that allows post types to be scheduled or published randomly, solving a recurring client content management need.',
   },
@@ -38,7 +38,7 @@ const projects = [
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     url: '#',
-    image: '/images/ecommerce-frontend.png',
+    image: process.env.PUBLIC_URL +'/images/ecommerce-frontend.png',
     /* Image keyword: "responsive ecommerce website design html css frontend" */
     desc: 'Built a fully responsive ecommerce website from scratch with pixel-perfect HTML5 and CSS3, converted from PSD design mockups.',
   },
@@ -58,7 +58,7 @@ const projects = [
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'SEO'],
     url: '#',
-    image: '/images/company-website.png',
+    image: process.env.PUBLIC_URL +'/images/company-website.png',
     /* Image keyword: "professional corporate company website design modern" */
     desc: 'Developed a professional business website with SEO optimization, improving the company\'s visibility on Google search results.',
   },
