@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://raitman005.github.io/portfolio",
+  "homepage": "https://raitman005.github.io/My-Profile",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "react": "^19.2.4",
