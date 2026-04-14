@@ -44,7 +44,8 @@ const projects = [
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     url: '#',
     images: [
-      process.env.PUBLIC_URL + '/images/ecommerce-frontend.png'
+      process.env.PUBLIC_URL + '/images/ecommerce-frontend.png',
+      process.env.PUBLIC_URL + '/images/ecommerce-frontend-2.png'
     ],
     desc: 'Built a fully responsive ecommerce website from scratch with pixel-perfect HTML5 and CSS3, converted from PSD design mockups.',
   },
