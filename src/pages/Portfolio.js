@@ -11,6 +11,10 @@ const projects = [
     images: [
       process.env.PUBLIC_URL + '/images/lipslikehome.png',
       process.env.PUBLIC_URL + '/images/lipslikehome-2.png',
+      process.env.PUBLIC_URL + '/images/lipslikehome-3.png',
+      process.env.PUBLIC_URL + '/images/lipslikehome-4.png',
+      process.env.PUBLIC_URL + '/images/lipslikehome-5.png',
+      process.env.PUBLIC_URL + '/images/lipslikehome-6.png',
     ],
     desc: 'Swiss-made luxury lip care brand. Customized Shopify Liquid theme, tailored product pages, and ensured a seamless multi-currency shopping experience.',
   },
@@ -23,6 +27,10 @@ const projects = [
     images: [
       process.env.PUBLIC_URL + '/images/cleanspiracy.png',
       process.env.PUBLIC_URL + '/images/cleanspiracy-2.png',
+      process.env.PUBLIC_URL + '/images/cleanspiracy-3.png',
+      process.env.PUBLIC_URL + '/images/cleanspiracy-4.png',
+      process.env.PUBLIC_URL + '/images/cleanspiracy-5.png',
+      process.env.PUBLIC_URL + '/images/cleanspiracy-6.png',
     ],
     desc: 'Swiss acne treatment brand. Built and customized Shopify store with before/after sections, clinical study pages, and conversion-focused product layout.',
   },
@@ -34,7 +42,7 @@ const projects = [
     url: '#',
     images: [
       process.env.PUBLIC_URL + '/images/wordpress-plugin.png',
-      process.env.PUBLIC_URL + '/images/wordpress-plugin-2.png',
+      process.env.PUBLIC_URL + '/images/wordpress-plugin-2.PNG',
     ],
     desc: 'Developed a custom WordPress plugin from scratch that allows post types to be scheduled or published randomly, solving a recurring client content management need.',
   },
