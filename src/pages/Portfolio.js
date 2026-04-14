@@ -33,7 +33,8 @@ const projects = [
     tags: ['WordPress', 'PHP', 'Plugin'],
     url: '#',
     images: [
-      process.env.PUBLIC_URL + '/images/wordpress-plugin.png'
+      process.env.PUBLIC_URL + '/images/wordpress-plugin.png',
+      process.env.PUBLIC_URL + '/images/wordpress-plugin-2.png',
     ],
     desc: 'Developed a custom WordPress plugin from scratch that allows post types to be scheduled or published randomly, solving a recurring client content management need.',
   },
@@ -45,7 +46,7 @@ const projects = [
     url: '#',
     images: [
       process.env.PUBLIC_URL + '/images/ecommerce-frontend.png',
-      process.env.PUBLIC_URL + '/images/ecommerce-frontend-2.png'
+      process.env.PUBLIC_URL + '/images/ecommerce-frontend-2.png',
     ],
     desc: 'Built a fully responsive ecommerce website from scratch with pixel-perfect HTML5 and CSS3, converted from PSD design mockups.',
   },
@@ -56,21 +57,10 @@ const projects = [
     tags: ['HTML5', 'CSS3', 'SEO'],
     url: '#',
     images: [
-      process.env.PUBLIC_URL + '/images/company-website.png'
+      process.env.PUBLIC_URL + '/images/company-website.png',
+      process.env.PUBLIC_URL + '/images/company-website-2.png',
     ],
     desc: "Developed a professional business website with SEO optimization, improving the company's visibility on Google search results.",
-  },
-  {
-    id: 6,
-    title: 'To Do List',
-    category: 'Frontend',
-    tags: ['HTML5', 'CSS3', 'ReactJS'],
-    url: '#',
-    images: [
-      process.env.PUBLIC_URL + '/images/to-do-list.png',
-      process.env.PUBLIC_URL + '/images/to-do-list-2.png',
-    ],
-    desc: "Developed a responsive To-Do List web application using ReactJS that allows users to efficiently manage their daily tasks. The application enables users to add, edit, complete, and delete tasks with real-time UI updates using React state management. Built with a component-based architecture to ensure clean, reusable code and a smooth user experience. This project demonstrates my understanding of React fundamentals such as functional components, hooks, and dynamic rendering.",
   },
 ];
 
@@ -87,6 +77,12 @@ function Lightbox({ project, startIndex, onClose }) {
     },
     [images.length]
   );
+
+  // Reset scroll to top when image changes
+  useEffect(() => {
+    const el = document.querySelector('.lightbox-main-image');
+    if (el) el.scrollTop = 0;
+  }, [currentIndex]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -120,7 +116,7 @@ function Lightbox({ project, startIndex, onClose }) {
           <button className="lightbox-close" onClick={onClose}>✕</button>
         </div>
 
-        {/* Main Image */}
+        {/* Main Image — arrows sit beside the image, sticky in the scrollable area */}
         <div className="lightbox-main-image">
           <button
             className="lightbox-nav prev"
@@ -183,7 +179,7 @@ function Lightbox({ project, startIndex, onClose }) {
 /* ─── Portfolio Component ────────────────────────────────────── */
 function Portfolio() {
   const [active, setActive] = useState('All');
-  const [lightbox, setLightbox] = useState(null); // { project, startIndex }
+  const [lightbox, setLightbox] = useState(null);
 
   const filtered =
     active === 'All' ? projects : projects.filter((p) => p.category === active);
@@ -225,7 +221,6 @@ function Portfolio() {
             >
               <img src={project.images[0]} alt={project.title} />
 
-              {/* Badge shown when project has multiple images */}
               {project.images.length > 1 && (
                 <div className="image-count-badge">
                   🖼 {project.images.length} images
