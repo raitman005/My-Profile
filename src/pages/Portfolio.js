@@ -36,6 +36,18 @@ const projects = [
   },
   {
     id: 3,
+    title: 'KeyForge Landing Page',
+    category: 'ReactJS',
+    tags: ['ReactJS', 'TailwindCSS', 'Vite'],
+    url: 'https://raitman005.github.io/KeyForge/',
+    images: [
+      process.env.PUBLIC_URL + '/images/KeyForge_Hero_Section.png',
+      process.env.PUBLIC_URL + '/images/Keyforge_Mobile_sneakpeek.PNG',
+    ],
+    desc: 'A responsive e-commerce landing page for a fictional mechanical keyboard brand. Built with React 18 + Vite, Tailwind CSS 3 and Lucide React. No Next.js, no state library, no extra dependencies.',
+  },
+  {
+    id: 4,
     title: 'WordPress Plugin',
     category: 'WordPress',
     tags: ['WordPress', 'PHP', 'Plugin'],
@@ -47,7 +59,7 @@ const projects = [
     desc: 'Developed a custom WordPress plugin from scratch that allows post types to be scheduled or published randomly, solving a recurring client content management need.',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Responsive Ecommerce Site',
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -59,7 +71,7 @@ const projects = [
     desc: 'Built a fully responsive ecommerce website from scratch with pixel-perfect HTML5 and CSS3, converted from PSD design mockups.',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Company Website',
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'SEO'],
