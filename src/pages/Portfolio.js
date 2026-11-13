@@ -41,7 +41,7 @@ const projects = [
     tags: ['ReactJS', 'TailwindCSS', 'Vite'],
     url: 'https://raitman005.github.io/KeyForge/',
     images: [
-      process.env.PUBLIC_URL + '/images/KeyForge_Hero_Section.png',
+      process.env.PUBLIC_URL + '/images/KeyForge_Hero_Section.PNG',
       process.env.PUBLIC_URL + '/images/Keyforge_Mobile_sneakpeek.PNG',
     ],
     desc: 'A responsive e-commerce landing page for a fictional mechanical keyboard brand. Built with React 18 + Vite, Tailwind CSS 3 and Lucide React. No Next.js, no state library, no extra dependencies.',
