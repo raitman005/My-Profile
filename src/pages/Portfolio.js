@@ -51,7 +51,7 @@ const projects = [
     title: 'Reptile Discovery',
     category: 'ReactJS',
     tags: ['ReactJS', 'TailwindCSS', 'Vite'],
-    url: 'https://raitman005.github.io/KeyForge/',
+    url: 'https://raitman005.github.io/reptiles/',
     images: [
       process.env.PUBLIC_URL + '/images/Reptile-Discovery-Banner.PNG'
     ],
