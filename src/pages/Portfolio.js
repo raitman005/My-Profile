@@ -48,6 +48,17 @@ const projects = [
   },
   {
     id: 4,
+    title: 'Reptile Discovery',
+    category: 'ReactJS',
+    tags: ['ReactJS', 'TailwindCSS', 'Vite'],
+    url: 'https://raitman005.github.io/KeyForge/',
+    images: [
+      process.env.PUBLIC_URL + '/images/Reptile-Discovery-Banner.PNG'
+    ],
+    desc: 'An interactive and responsive wildlife landing page showcasing three fascinating reptiles through engaging facts, modern UI design, and immersive visuals, built with React, TypeScript, and Tailwind CSS.',
+  },
+  {
+    id: 5,
     title: 'WordPress Plugin',
     category: 'WordPress',
     tags: ['WordPress', 'PHP', 'Plugin'],
@@ -59,7 +70,7 @@ const projects = [
     desc: 'Developed a custom WordPress plugin from scratch that allows post types to be scheduled or published randomly, solving a recurring client content management need.',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Responsive Ecommerce Site',
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -71,7 +82,7 @@ const projects = [
     desc: 'Built a fully responsive ecommerce website from scratch with pixel-perfect HTML5 and CSS3, converted from PSD design mockups.',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Company Website',
     category: 'Frontend',
     tags: ['HTML5', 'CSS3', 'SEO'],
